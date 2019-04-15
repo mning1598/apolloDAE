@@ -1,0 +1,115 @@
+body {
+  background: #eee;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+  flex-flow: row;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .flex-container:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+.box {
+  height: 100px;
+  /* min-width: 250px; */
+  /* float: left; */
+  /* width: 320px; */
+  /* flex-grow: 1; */
+  flex-basis: 500px;
+}
+
+.one {
+  background: red;
+  flex-basis: 100px;
+}
+
+.two {
+  background: blue;
+  flex-basis: 100px;
+}
+
+.three {
+  background: green;
+  flex-basis: 100px;
+}
+
+nav {
+  background: #040;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+.social {
+  max-width: 80px;
+}
+
+#blocks {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 0 1 32%;
+}
+
+article h2 {
+  text-align: center;
+}
+
+a.tw {
+  background: url(tw.png) no-repeat center;
+  background-size: 80%;
+}
+
+a.fb {
+  background: url(fb.png) no-repeat center;
+  background-size: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav li {
+    flex: 1 1 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}

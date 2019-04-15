@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="anim">
+      <div class="ball-one"></div>
+      <div class="ball-two"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Exercise</h1>
+    Apply a 2 second transition to the width property of the div. Define an
+    ease-in-out timing function for the transition.
+
+    <div id="exercise2"></div>
+
+    <p>Hover over the div element above.</p>
+
+    <h1>Exercise</h1>
+    Apply a 1 second transition to the width property of the div one. Apply also
+    a 1 second transition to the width property of the div two, but make sure
+    the animation starts only after the div one has stopped. (hint: use delay)
+    <div id="main">
+      <div class="one"></div>
+      <br />
+      <div class="two"></div>
+    </div>
+
+    <p>Hover over the div element above.</p>
+
+    <h1>Exercise</h1>
+    Apply transitions to the CSS so that the coloured squares "open-up" when the
+    div "main" is hovered. To "open-up" each square should rotate 90deg by its
+    outer-most corner.
+    <div id="main">
+      <div class="content">Hi!</div>
+      <div class="topleft"></div>
+      <div class="topright"></div>
+      <div class="bottomleft"></div>
+      <div class="bottomright"></div>
+    </div>
+    Tips: Use transform-origin in each square selector and apply a transition to
+    the transform property.
+    <p>Hover over the div element above.</p>
+
+    <h1>Exercise</h1>
+    Define a transition on the .box for the "left" property. Add JavaScript code
+    to the clicked function to toggle the position of the box between left=0 and
+    left=300, i.e., make the box move left to right and right to left when
+    clicked. (Can you make it move in a square path?
+    Left->Right->Bottom->Right->Top)
+    <div class="box" onclick="clickedBox()">Lorem</div>
+
+    <script>
+      var el = document.querySelector(".box");
+
+      el.addEventListener("click", clickedBox, false);
+
+      function clickedBox(evt) {
+        alert("ASDF)");
+
+        /* do */
+        console.log("clicked on box.");
+      }
+    </script>
+
+    <h1>Exercise</h1>
+    Add animation to the CSS so that each of the 3 squares rotates with a
+    different speed. The animation should only be active when the "loader" div
+    has class "loading". For testing, the button toggles the loader class
+    between "loading" and "".
+    <div id="loader" class="loading">
+      <div id="redbox" class="red"></div>
+      <div id="greenbox" class="green"></div>
+      <div id="bluebox" class="blue"></div>
+    </div>
+
+    <input type="button" id="button" value="load" />
+
+    <script>
+      var loader = document.getElementById("loader");
+      var button = document.getElementById("button");
+      button.addEventListener("click", function() {
+        if (loader.className === "loading") {
+          loader.className = "";
+          var blue = document.getElementById("bluebox");
+          /* do */
+        } else {
+          loader.className = "loading";
+          /* do */
+        }
+      });
+
+      loader.className = "";
+    </script>
+  </body>
+</html>

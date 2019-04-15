@@ -1,0 +1,366 @@
+.circle {
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.sm-circle {
+  position: absolute;
+  background: coral;
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+div#one {
+  top: 10%;
+  left: 10%;
+  background: red;
+}
+
+div#one:hover {
+  animation: one 2s ease-in-out infinite alternate;
+}
+
+@keyframes one {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+div#two {
+  top: 10%;
+  left: 40%;
+  background: blue;
+}
+
+div#two:hover {
+  animation: two 2s ease-in-out infinite alternate;
+}
+
+@keyframes two {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+div#three {
+  top: 10%;
+  left: 70%;
+  background: green;
+}
+
+div#three:hover {
+  animation: three 2s linear infinite;
+}
+
+@keyframes three {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div#four {
+  top: 40%;
+  left: 10%;
+  background: yellow;
+}
+
+div#four:hover {
+  /* animation: two 2s linear infinite, three 3s linear infinite; */
+  animation: four 2s linear infinite;
+}
+
+@keyframes four {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+div#five {
+  top: 40%;
+  left: 40%;
+  background: purple;
+}
+
+div#five:hover {
+  /* animation: two 2s linear infinite, three 3s linear infinite; */
+  animation: five 1s linear infinite alternate;
+}
+
+@keyframes five {
+  0% {
+    background: purple;
+
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    background: coral;
+
+    transform: scaleX(1);
+  }
+}
+
+div#six {
+  top: 40%;
+  left: 70%;
+  background: pink;
+}
+
+div#six:hover {
+  /* animation: two 2s linear infinite, three 3s linear infinite; */
+  animation: six 1s linear infinite alternate;
+}
+
+@keyframes six {
+  0% {
+    transform: translateY(-50%);
+  }
+  20% {
+    transform: translateY(-25%);
+  }
+  60% {
+    transform: translateY(-10%);
+  }
+  85% {
+    transform: translateY(-3%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+div#seven {
+  top: 70%;
+  left: 10%;
+  background: orange;
+}
+
+div#seven:hover {
+  animation: seven 0.5s linear;
+}
+
+@keyframes seven {
+  0% {
+    transform: translateX(-8%);
+  }
+  25% {
+    transform: translateX(8%);
+  }
+  50% {
+    transform: translateX(-4%);
+  }
+  75% {
+    transform: translateX(4%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+div#eight {
+  top: 70%;
+  left: 40%;
+  background: aquamarine;
+}
+
+div#eight:hover {
+  animation: eight 0.5s linear;
+}
+
+@keyframes eight {
+  0% {
+    transform: translateY(-8%);
+  }
+  25% {
+    transform: translateY(8%);
+  }
+  50% {
+    transform: translateY(-4%);
+  }
+  75% {
+    transform: translateY(4%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+div#nine {
+  top: 70%;
+  left: 70%;
+  background: khaki;
+}
+
+div#nine:hover {
+  animation: nine 0.5s linear infinite alternate;
+}
+
+@keyframes nine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+div#tenx {
+  top: 650px;
+  left: 100px;
+  animation: transX 1s linear infinite alternate;
+}
+
+@keyframes transX {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+div#teny {
+  top: 650px;
+  left: 200px;
+  animation: transY 1s linear infinite alternate;
+}
+@keyframes transY {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+div#tenxy {
+  top: 650px;
+  left: 250px;
+  animation: transXY 1s linear infinite alternate;
+}
+
+@keyframes transXY {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+div#tenyx {
+  top: 650px;
+  left: 300px;
+  animation: transYX 1s linear infinite alternate;
+}
+@keyframes transYX {
+  0% {
+    transform: translate(0%, 100%);
+  }
+  50% {
+    transform: translate(100%, 0%);
+  }
+  100% {
+    transform: translate(0%, 100%);
+  }
+}
+
+div#elevenw {
+  top: 650px;
+  left: 500px;
+  animation: scaleW 1s linear infinite alternate;
+}
+
+@keyframes scaleW {
+  0% {
+    transform: scaleX(2);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(2);
+  }
+}
+
+div#elevenh {
+  top: 650px;
+  left: 575px;
+  animation: scaleH 1s linear infinite alternate;
+}
+
+@keyframes scaleH {
+  0% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(2);
+  }
+}
+
+div#elevenwh {
+  top: 650px;
+  left: 650px;
+  animation: scaleWH 1s linear infinite alternate;
+}
+
+@keyframes scaleWH {
+  0% {
+    transform: scale(2, 2);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(2, 2);
+  }
+}

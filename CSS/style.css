@@ -1,0 +1,30 @@
+h2 {
+  font-size: 24px;
+}
+#content-header {
+  font-size: 18px;
+  color: red;
+}
+
+span {
+  display: block;
+  color: blue;
+  text-transform: uppercase;
+}
+
+.deck {
+  color: red;
+}
+/* div {
+  width: 100%;
+  background-color: grey;
+} */
+
+.box {
+  margin: 30px auto;
+  padding: 15px 100px 5px;
+  border: 5px solid #000;
+  width: 500px;
+  background: #aadddd;
+  box-shadow: 2px 2px 4px 2px rgba(40, 40, 40, 4);
+}
