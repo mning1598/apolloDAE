@@ -1,0 +1,7 @@
+.rect {
+  position: absolute;
+}
+.line {
+  position: absolute;
+  top: 22px;
+}

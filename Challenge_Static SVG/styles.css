@@ -1,0 +1,16 @@
+.body{ 
+}
+.circle {
+    background-color: #329171;
+}
+.font1 {
+    font-family: "Lucida Grande";
+    fill:#7098d8;
+    fill-opacity:1;
+    stroke:white;
+    stroke-width:.4px;
+    stroke-linecap:butt;
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+}
+

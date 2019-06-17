@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: #fff3d3;
+}
+svg {
+  width: 450px;
+  display: flex;
+  margin: 0 auto;
+}
+.chapeu,
+.oculos,
+.bigode {
+  fill: none;
+  stroke: #1e1817;
+  visibility: hidden;
+}
+
+/*-- CONTROLS --*/
+#play,
+#play svg,
+#replay,
+#replay svg,
+#pause,
+#pause svg {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#slider,
+#sliderOculos {
+  width: 400px;
+  margin: 20px auto;
+  display: flex;
+  cursor: pointer;
+}
+.bar {
+    position: relative;
+    height: 2px;
+    background: none;
+    background: black;
+    top: -50px;
+    margin: 0;
+
+}
+.ui-slider {
+  height: 2px;
+  background: none;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #1e1817;
+  border: none;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+#triBtm,
+#triTop {
+  opacity: 0;
+}
+
+.newsvg {
+    position: absolute;
+    top: 0px;
+    left: 300px;
+}
+
+#anim1,
+#anim2 {
+    visibility: hidden;
+}
+
+.controllers {
+    position: absolute;
+    top: 750px;
+    left: 350px;
+}

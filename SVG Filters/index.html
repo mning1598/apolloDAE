@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+    </script>
+</head>
+
+<body>
+    <svg>
+        <defs>
+            <filter id="blurFilter" y="-5" height="40">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3" y="-" />
+            </filter>
+        </defs>
+
+        <!-- <ellipse cx="55" cy="60" rx="25" ry="15" style="stroke: none; fill: #0000ff; " />
+
+        <ellipse cx="155" cy="60" rx="25" ry="15" style="stroke: none; fill: #0000ff; filter: url(#blurFilter);" /> -->
+
+
+        <defs>
+            <filter id="blurFilter2" y="-10" height="40" x="-10" width="150">
+                <feOffset in="SourceAlpha" dx="20" dy="20" result="offset2" />
+                <feGaussianBlur in="offset2" stdDeviation="3" result="blur2" />
+
+                <feMerge>
+                    <feMergeNode in="blur2" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        </defs>
+
+        <ellipse cx="55" cy="60" rx="25" ry="15" style="stroke: none; fill: #0000ff; filter: url(#blurFilter2);" />
+    </svg>
+</body>
+
+</html>

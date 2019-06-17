@@ -1,0 +1,13 @@
+/* html { text-align: center }
+
+body { background: #000; color: #fff }
+
+svg { width: 65px }
+
+path { cursor: pointer } */
+
+body {
+    margin:0;
+    text-align:center;
+    background:#fbf8e2;
+  }

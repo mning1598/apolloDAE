@@ -1,0 +1,36 @@
+.rect {
+  width: 500px;
+  height: 500px;
+  margin: 10px 10px 10px;
+  padding: 10px;
+}
+
+#obj1,
+#obj2,
+#obj3,
+#obj4 {
+  opacity: 0;
+}
+.big {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.big2 {
+  position: absolute;
+  top: 87.5px;
+  left: 87.5px;
+}
+
+.big3 {
+  position: absolute;
+  top: 125px;
+  left: 125px;
+}
+
+.big4 {
+  position: absolute;
+  top: 162.5px;
+  left: 162.5px;
+}

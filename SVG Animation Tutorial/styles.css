@@ -1,0 +1,58 @@
+.mouse {
+    fill: #E5E4E3;
+}
+
+.tulip {
+    fill: #CC2954;
+}
+
+.diamondOr {
+    animation-name: diamondOrigin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes diamondOrigin {
+    0% {
+        transform: rotate(0deg) translate(0, 0) scale(1);
+    }
+
+    25% {
+        transform: translate(0, -75px) scale(.5);
+    }
+
+    50% {
+        transform: rotate(-90deg) scale(1.5);
+    }
+
+    75% {
+        transform: translate(0, 75px) scale(.5);
+    }
+
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.pathTulip {
+    fill: #E5E4E3;
+    stroke: #CC2954;
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+.diamondSt {
+    animation-name: diamondStroke;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes diamondStroke {
+    0%   { stroke-dashoffset: 1000; }
+    50%   { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 1000; }
+}

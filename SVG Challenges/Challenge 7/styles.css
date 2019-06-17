@@ -1,0 +1,20 @@
+.circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.c1 {
+  top: 50px;
+  left: 100px;
+}
+
+.c2 {
+  top: 100px;
+  left: 250px;
+}
+
+.c3 {
+  top: 150px;
+  left: 400px;
+}
